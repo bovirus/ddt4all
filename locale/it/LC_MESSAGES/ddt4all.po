@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DDT4ALL (22.05.2018)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-04 07:06+0100\n"
-"PO-Revision-Date: 2019-01-10 21:11+0100\n"
+"POT-Creation-Date: 2020-11-23 19:18+0100\n"
+"PO-Revision-Date: 2020-11-23 19:54+0100\n"
 "Last-Translator: bovirus <bovirus@gmail.com>\n"
 "Language-Team: bovirus@gmail.com\n"
 "Language: it\n"
@@ -103,7 +103,7 @@ msgid "Value;Text"
 msgstr "Valore;Testo"
 
 msgid "Number of bytes"
-msgstr "Nymero byte"
+msgstr "Numero byte"
 
 msgid "Unit"
 msgstr "Unità"
@@ -182,7 +182,7 @@ msgstr "<font color=green>La richiesta <font color=blue>'%s'</font> manca di alc
 
 #, python-format
 msgid "<font color=red>Request <font color=blue>'%s'</font> has missing inputs :</font>"
-msgstr "<font color=red>La richeista <font color=blue>'%s'</font> manca di alcuni parametri :</font>"
+msgstr "<font color=red>La richiesta <font color=blue>'%s'</font> manca di alcuni parametri :</font>"
 
 #, python-format
 msgid "<font color=orange> - '%s'</font>"
@@ -293,18 +293,6 @@ msgstr "Parametri ECU"
 msgid "Screens"
 msgstr "Schermi"
 
-msgid "Action"
-msgstr "Azione"
-
-msgid "New Category"
-msgstr "Nuova categoria"
-
-msgid "New Screen"
-msgstr "Nuovo schermo"
-
-msgid "Rename"
-msgstr "Rinomina"
-
 msgid "File"
 msgstr "File"
 
@@ -353,17 +341,29 @@ msgstr "Crea nuova ECU"
 msgid "Save current ECU"
 msgstr "Salva ECU attuale"
 
+msgid "Save last record"
+msgstr "Salva ultimo record"
+
 msgid "Save ECU list"
 msgstr "Salva elenco ECU"
 
 msgid "Zip database"
 msgstr "Comprimi database"
 
+msgid "Action"
+msgstr "Azione"
+
+msgid "New Category"
+msgstr "Nuova categoria"
+
+msgid "New Screen"
+msgstr "Nuovo schermo"
+
+msgid "Rename"
+msgstr "Rinomina"
+
 msgid "Plugins"
 msgstr "Plugin"
-
-msgid "Cannot load plugin "
-msgstr "Impossibile caricare plugin "
 
 msgid "Save database (keep '.zip' extension)"
 msgstr "Salva database (mantieni estensione '.json')"
@@ -384,7 +384,7 @@ msgid "Please select a category before creating new screen"
 msgstr "Seleziona una categoria prima di creare un nuovo schermo"
 
 msgid "Enter screen name"
-msgstr "Insersici nome schermo"
+msgstr "Inserisci nome schermo"
 
 msgid "Scan options"
 msgstr "Opzioni ricerca"
@@ -413,8 +413,13 @@ msgstr "Salva veicolo (mantieni estensione '.ecu')"
 msgid "Save ECU (keep '.json' extension)"
 msgstr "Salva ECU (mantieni estensione '.json')"
 
+msgid "Save record (keep '.txt' extension)"
+msgstr "Salva record (mantieni estensione 'txt')"
+
 msgid "<center>This Software is free, but I need money to buy cables/ECUs and make this application more reliable</center>"
-msgstr "<center>Questo software è gratuito, ma l'autore ha affrontato delle spese per acquistare cavi/ECU e rendere questa applicazione sempre più affidabile.<center></center>Vuoi contribuire alle spese?</center>"
+msgstr ""
+"<center>Questo software è gratuito, ma l'autore ha affrontato delle spese per acquistare cavi/ECU e rendere questa applicazione sempre più affidabile.\n"
+"Vuoi contribuire alle spese?</center>"
 
 msgid "Yes I contribute"
 msgstr "Voglio contribuire"
@@ -423,7 +428,9 @@ msgid "No, I don't"
 msgstr "No, grazie"
 
 msgid "<center>Thank you for you contribution, if nothing happens, please go to : https://github.com/cedricp/ddt4all</center>"
-msgstr "<center>Grazie per la tua contribuzione. Se non succede nulla vai qui : https://github.com/cedricp/ddt4all</center>"
+msgstr ""
+"<center>Grazie per la tua contribuzione. \n"
+"Se non succede nulla vai qui : https://github.com/cedricp/ddt4all</center>"
 
 msgid "ELM port selection"
 msgstr "Selezione porta ELM"
@@ -441,13 +448,16 @@ msgid "ELM benchmark"
 msgstr "Prestazioni ELM"
 
 msgid "WiFi port : "
-msgstr "Porta Wi-Fi : "
+msgstr "Porta Wi-Fi: "
 
 msgid "I'm aware that I can harm my car if badly used"
 msgstr "Sono consapevole che in caso di uso errato potrei danneggiare l'auto"
 
 msgid "Dark style"
 msgstr "Stile scuro"
+
+msgid "Change UART speed"
+msgstr "Modifica velocità UART"
 
 msgid "You must check the recommandations"
 msgstr "Devi accettare le raccomandazioni"
@@ -489,21 +499,6 @@ msgstr "Velocità iniziale COM:"
 msgid "ELM not responding"
 msgstr "ELM non risponde"
 
-msgid "ERROR - wifi do not support changing baud rate"
-msgstr "Errore - Il Wi-Fi non supporta la modifica della velocità"
-
-msgid "Changing baud rate to:"
-msgstr "Modifica velocità a:"
-
-msgid "ERROR - command not supported"
-msgstr "ERRORE - comando non supportato"
-
-msgid "ERROR - rate not supported. Let's go back."
-msgstr "ERRORE - velocità non supportata. Annullamento modifica."
-
-msgid "ERROR - something went wrong. Let's get back."
-msgstr "ERRORE - qualcosa non ha funzionato. Annullamento modifica."
-
 msgid "Trying to open port"
 msgstr "Apertura porta COM"
 
@@ -537,7 +532,7 @@ msgstr "Aggiunta file srogente %s"
 
 #, python-format
 msgid "Adding plugin file %s"
-msgstr "Aggiunta file plugin %s"
+msgstr "Aggiunto plugin file %s"
 
 msgid "To be able to edit your screen, first export it in JSON format"
 msgstr "Per poter modificare la schermata, prima esportala in formato JSON"
@@ -624,7 +619,9 @@ msgid "Clearing DTC information"
 msgstr "Azzeramento informazioni DTC"
 
 msgid "No ClearDTC request for that ECU, will send default 14FF00"
-msgstr "Nessuna richiesta ClearDTC per questa ECU. Verrà inviato predefinito (14FF00)"
+msgstr ""
+"Nessuna richiesta ClearDTC per questa ECU. \n"
+"Verrà inviato predefinito (14FF00)"
 
 msgid "<center>You are about to clear diagnostic troubles codes</center>"
 msgstr "<center>Stai azzerando i codici diagnostici guasti</center>"
@@ -687,16 +684,16 @@ msgid "<font color='red'>CRASH DETECTED</font>"
 msgstr "<font color='red'>RILEVATO CRASH</font>"
 
 msgid "<font color='green'>NO CRASH DETECTED</font>"
-msgstr "<font color='green'>NO CRASH DETECTED</font>"
+msgstr "<font color='green'>NESSUN CRASH RILEVATO</font>"
 
 msgid "<font color='green'>CLEAR EXECUTED</font>"
 msgstr "<font color='green'>AZZERAMENTO COMPLETATO</font>"
 
 msgid "<font color='red'>CLEAR FAILED</font>"
-msgstr "<font color='red'>AZZERAMENTO FALLITOCLEAR FAILED</font>"
+msgstr "<font color='red'>AZZERAMENTO FALLITO</font>"
 
 msgid "Megane/Scenic II card programming"
-msgstr "Megane/Scenic II - Programmazione card"
+msgstr "Megane/Scenic II - Programmazione scheda"
 
 msgid "Keys"
 msgstr "Chiavi"
@@ -726,7 +723,7 @@ msgid "Num key learnt"
 msgstr "Apprendimento tasti numerici"
 
 msgid "CARD IDE"
-msgstr "IDE CARD"
+msgstr "SCHEDA IDE"
 
 msgid "Cannot get ISK, check connections and UCH compatibility"
 msgstr "Impossibile ottenere ISK - verifica connessioni e compatibilità UCH"
@@ -735,7 +732,7 @@ msgid "<font color='red'>PIN CODE NOT RECOGNIZED</font>"
 msgstr "<font color='red'>CODICE PIN NON RICONOSCIUTO</font>"
 
 msgid "<font color='green'>PIN CODE OK / KEY LEARNING</font>"
-msgstr "<font color='green'>CODICE PIN OK / APRRENDIMENTO CHIAVE</font>"
+msgstr "<font color='green'>CODICE PIN OK / APPRENDIMENTO CHIAVE</font>"
 
 msgid "<font color='green'>PIN CODE OK / UCH LEARNING</font>"
 msgstr "<font color='green'>CODICE PIN OK / APPRENDIMENTO UCH</font>"
@@ -750,7 +747,7 @@ msgid "Modus/Clio III EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET
 msgstr "Modus/Clio III - EPS - Azzeramento<br><font color='red'>QUESTO PLUGIN RIPRISTINERA' I DATA EPS IMMO<br>NON USARLO SE NON HAI IDEA DI CIO' CHE SIGNIFICA</font>"
 
 msgid "BLANK STATUS & VIN READ"
-msgstr "STATO BLANK & LETTURA VIN"
+msgstr "STATO BLANK E LETTURA VIN"
 
 msgid "Virginize EPS"
 msgstr "Azzeramento EPS"
@@ -804,7 +801,7 @@ msgid "UCH Tools"
 msgstr "UCH"
 
 msgid "LAGUNA II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
-msgstr "LAGUNA II - UCH - Azzeramento<br><font color='red'>QUESTO PLUGIN AZZERERA' LA TUA UCH<br>NON USARLO SE NON HAI IDEA DI CIO' CHE SIGNIFICA</font>"
+msgstr "LAGUNA II - UCH - Azzeramento<br><font color='red'>QUESTO PLUGIN AZZERERA' L'UCH<br>NON USARLO SE NON HAI IDEA DI CIO' CHE SIGNIFICA</font>"
 
 msgid "Check UCH Virgin"
 msgstr "Verifica azzeramento UCH"
@@ -822,37 +819,37 @@ msgid "Laguna III UCH Reset"
 msgstr "Laguna III - UCH - Ripristino"
 
 msgid "LAGUNA III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
-msgstr "LAGUNA III - UCH - Azzeramento<br><font color='red'>QUESTO PLUGIN AZZERERA' LA TUA UCH<br>NON USARLO SE NON HAI IDEA DI CIO' CHE SIGNIFICA</font>"
+msgstr "LAGUNA III - UCH - Azzeramento<br><font color='red'>QUESTO PLUGIN AZZERERA' L'UCH<br>NON USARLO SE NON HAI IDEA DI CIO' CHE SIGNIFICA</font>"
 
 msgid "Megane/Scenic II UCH Reset"
 msgstr "Megane/Scenic II - UCH - Ripristino"
 
 msgid "MEGANE II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
-msgstr "MEGANE II - UCH - AZZERAMENTO<br><font color='red'>QUESTO PLUGIN AZZERERA L'UCH<br>NON USARLO SE NON HAI IDEA DI CIO' CHE SIGNIFICA</font>"
+msgstr "MEGANE II - UCH - AZZERAMENTO<br><font color='red'>QUESTO PLUGIN AZZERERA' L'UCH<br>NON USARLO SE NON HAI IDEA DI CIO' CHE SIGNIFICA</font>"
 
 msgid "Megane3 AIRBAG Reset"
 msgstr "Megane 3 - Airbag - Ripristino"
 
 msgid "Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
-msgstr "Megane III<br>AIRBAG - AZZERAMENTO<br><font color='red'>QUESTO PLUGIN SBLOCCHERA' I DATI CRASH AIRBAG<br>NON USARE IL PLUGIN SE NON HAI IDEA DEL SUO USO</font>"
+msgstr "Megane III<br>AIRBAG - AZZERAMENTO<br><font color='red'>QUESTO PLUGIN SBLOCCHERA' I DATI CRASH AIRBAG<br>NON USARE IL PLUGIN SE NON HAI IDEA DI CIO' CHE SIGNIFICA</font>"
 
 msgid "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
 msgstr "ZOE/FLENCE/Megane III/Scenic III - EPS - Ripristino"
 
 msgid "ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET EPS IMMO DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
-msgstr "ZOE/FLENCE/Megane III/Scenic III - EPS _ AZZERAMENTO<br><font color='red'>QUESTO PLUGIN AZZERERA' I DATI IMMO EPS<br>NON USARE IL PLUGIN SE NON HAI IDEA DEL SUO USO</font>"
+msgstr "ZOE/FLENCE/Megane III/Scenic III - EPS _ AZZERAMENTO<br><font color='red'>QUESTO PLUGIN AZZERERA' I DATI IMMO EPS<br>NON USARE IL PLUGIN SE NON HAI IDEA DI CIO' CHE SIGNIFICA</font>"
 
 msgid "Megane/Scenic III UCH Reset"
 msgstr "Megane/Scenic III - UCH - Ripristino"
 
 msgid "MEGANE III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
-msgstr "MEGANE III - UCH - AZZERAMENTO<br><font color='red'>QUESTO PLUGIN AZZERERA' L'UCH<br>NON USARE QUESTO PLUGIN SE NON NE CONOSCI L'USO</font>"
+msgstr "MEGANE III - UCH - AZZERAMENTO<br><font color='red'>QUESTO PLUGIN AZZERERA' L'UCH<br>NON USARE QUESTO PLUGIN SE NON HAI IDEA DI CIO' CHE SIGNIFICA</font>"
 
 msgid "RSAT4 AIRBAG Reset"
 msgstr "RSAT4 - Airbag - Ripristino"
 
 msgid "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
-msgstr "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG - AZZERAMENTO<br><font color='red'>QUESTO PLUGIN SBLOCCHERA' I DATI CRASH AIRBAG<br>NON USARE QUESTO PLUGIN SE NON NE CONOSCI L'USO</font>"
+msgstr "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG - AZZERAMENTO<br><font color='red'>QUESTO PLUGIN SBLOCCHERA' I DATI CRASH AIRBAG<br>NON USARE QUESTO PLUGIN SE NON HAI IDEA DI CIO' CHE SIGNIFICA</font>"
 
 msgid "CRC calculator"
 msgstr "Calcolatore CRC"
